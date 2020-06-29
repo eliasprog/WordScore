@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenDyslexicAlta-Regular.otf">
+            <string>OpenDyslexicAlta-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="ClassificacaoTableViewCell" customModule="MegazordApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tN-tc-qNm">
+                        <rect key="frame" x="10" y="27.5" width="35" height="36.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="nNG-nQ-vcc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenDyslexicAlta-Regular" family="OpenDyslexicAlta" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="kkd-B0-f1t">
+                        <rect key="frame" x="55" y="5" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="NJ1-wA-x2l"/>
+                            <constraint firstAttribute="width" constant="80" id="YQd-eA-TMX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Fulano de tal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sU-ag-UgL">
+                        <rect key="frame" x="145" y="14" width="179" height="30"/>
+                        <fontDescription key="fontDescription" name="OpenDyslexicAlta-Regular" family="OpenDyslexicAlta" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-nd-vUQ">
+                        <rect key="frame" x="334" y="7.5" width="70" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.diamond.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="se9-ij-4y2">
+                                <rect key="frame" x="10" y="10.5" width="50" height="49"/>
+                                <color key="tintColor" red="0.95686274510000002" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="6nB-3h-2uW"/>
+                            <constraint firstAttribute="bottom" secondItem="se9-ij-4y2" secondAttribute="bottom" constant="10" id="DTT-ik-J6g"/>
+                            <constraint firstItem="se9-ij-4y2" firstAttribute="top" secondItem="5Hw-nd-vUQ" secondAttribute="top" constant="10" id="Tvl-Ze-dqP"/>
+                            <constraint firstAttribute="trailing" secondItem="se9-ij-4y2" secondAttribute="trailing" constant="10" id="Wjs-CZ-yuy"/>
+                            <constraint firstItem="se9-ij-4y2" firstAttribute="leading" secondItem="5Hw-nd-vUQ" secondAttribute="leading" constant="10" id="Y8r-kZ-xmZ"/>
+                            <constraint firstAttribute="width" constant="70" id="ePC-eH-C0n"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 pontos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-5f-dTX">
+                        <rect key="frame" x="145" y="54" width="85" height="23"/>
+                        <fontDescription key="fontDescription" name="OpenDyslexicAlta-Regular" family="OpenDyslexicAlta" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8tN-tc-qNm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27.5" id="0wS-mI-5OJ"/>
+                    <constraint firstItem="5Hw-nd-vUQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="1PJ-vU-G3u"/>
+                    <constraint firstAttribute="bottom" secondItem="8tN-tc-qNm" secondAttribute="bottom" constant="27.5" id="5md-km-pc6"/>
+                    <constraint firstItem="0sU-ag-UgL" firstAttribute="leading" secondItem="kkd-B0-f1t" secondAttribute="trailing" constant="10" id="6pB-8Z-zsw"/>
+                    <constraint firstAttribute="bottom" secondItem="kkd-B0-f1t" secondAttribute="bottom" constant="5" id="BYm-YU-gX4"/>
+                    <constraint firstItem="mbQ-5f-dTX" firstAttribute="leading" secondItem="kkd-B0-f1t" secondAttribute="trailing" constant="10" id="J48-IM-PR7"/>
+                    <constraint firstItem="kkd-B0-f1t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="LrB-lx-iYM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mbQ-5f-dTX" secondAttribute="bottom" constant="3.5" id="MnS-a5-tpa"/>
+                    <constraint firstItem="8tN-tc-qNm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UPb-8w-7B3"/>
+                    <constraint firstItem="kkd-B0-f1t" firstAttribute="leading" secondItem="8tN-tc-qNm" secondAttribute="trailing" constant="10" id="aIp-lC-IoC"/>
+                    <constraint firstItem="5Hw-nd-vUQ" firstAttribute="leading" secondItem="0sU-ag-UgL" secondAttribute="trailing" constant="10" id="cpW-mj-dCe"/>
+                    <constraint firstAttribute="bottom" secondItem="5Hw-nd-vUQ" secondAttribute="bottom" constant="7.5" id="hZY-Ho-NY6"/>
+                    <constraint firstItem="mbQ-5f-dTX" firstAttribute="top" secondItem="0sU-ag-UgL" secondAttribute="bottom" constant="10" id="khW-99-0SW"/>
+                    <constraint firstItem="0sU-ag-UgL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="lcU-Wf-i9Z"/>
+                    <constraint firstAttribute="trailing" secondItem="5Hw-nd-vUQ" secondAttribute="trailing" constant="10" id="oPb-co-fzJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellAvatar" destination="kkd-B0-f1t" id="VJW-ON-Slk"/>
+                <outlet property="cellOrderNumber" destination="8tN-tc-qNm" id="n2L-8F-bss"/>
+                <outlet property="cellPoints" destination="mbQ-5f-dTX" id="EUU-JR-aPe"/>
+                <outlet property="cellTitle" destination="0sU-ag-UgL" id="UqQ-QK-QvC"/>
+                <outlet property="diamondImageView" destination="se9-ij-4y2" id="cqn-l6-nDf"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="123.54910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar1" width="312" height="320"/>
+        <image name="suit.diamond.fill" catalog="system" width="107" height="128"/>
+    </resources>
+</document>

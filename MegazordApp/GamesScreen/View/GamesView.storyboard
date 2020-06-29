@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xo5-at-bNg">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jogos-->
+        <scene sceneID="8ic-FB-61R">
+            <objects>
+                <viewController id="bCK-XX-8CD" customClass="GamesViewController" customModule="MegazordApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSY-bD-7Yh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hP5-4Y-W93">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="4Nh-7t-B0A">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="estimatedItemSize" width="160" height="165"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GameCard" id="i6D-sp-fF9" customClass="CardsGamesCollectionViewCell" customModule="MegazordApp" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="10" width="165" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5bt-6I-tMo">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-ze-SgG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="170"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="170" id="KDc-Bi-bYa"/>
+                                                        <constraint firstAttribute="width" constant="165" id="awo-OL-Eps"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nfL-ze-SgG" firstAttribute="top" secondItem="5bt-6I-tMo" secondAttribute="top" id="FQd-3t-132"/>
+                                                <constraint firstItem="nfL-ze-SgG" firstAttribute="leading" secondItem="5bt-6I-tMo" secondAttribute="leading" id="GfS-5E-GcE"/>
+                                                <constraint firstAttribute="bottom" secondItem="nfL-ze-SgG" secondAttribute="bottom" id="ZyY-ZB-1F6"/>
+                                                <constraint firstAttribute="trailing" secondItem="nfL-ze-SgG" secondAttribute="trailing" id="i1V-DX-ohm"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardsGamesImageView" destination="nfL-ze-SgG" id="YQG-ba-dR3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hP5-4Y-W93" firstAttribute="leading" secondItem="HiE-TB-7LE" secondAttribute="leading" id="1xh-aC-ats"/>
+                            <constraint firstItem="HiE-TB-7LE" firstAttribute="trailing" secondItem="hP5-4Y-W93" secondAttribute="trailing" id="HLH-Et-Sdo"/>
+                            <constraint firstItem="HiE-TB-7LE" firstAttribute="bottom" secondItem="hP5-4Y-W93" secondAttribute="bottom" id="QH7-Y8-W3q"/>
+                            <constraint firstItem="hP5-4Y-W93" firstAttribute="top" secondItem="HiE-TB-7LE" secondAttribute="top" id="zMK-Ib-RpX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HiE-TB-7LE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jogos" id="APk-1W-l0F"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hP5-4Y-W93" id="Bq7-VN-xs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5y-dW-38C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="109.29535232383809"/>
+        </scene>
+        <!--Jogos-->
+        <scene sceneID="COV-uD-B6N">
+            <objects>
+                <navigationController storyboardIdentifier="GamesView" automaticallyAdjustsScrollViewInsets="NO" id="Xo5-at-bNg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jogos" image="gamecontroller.fill" catalog="system" selectedImage="gamecontroller.fill" id="OPE-NF-dEV"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="OcF-ej-DFv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bCK-XX-8CD" kind="relationship" relationship="rootViewController" id="wvx-Ty-3IB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TrQ-EI-7WP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
+    </resources>
+</document>

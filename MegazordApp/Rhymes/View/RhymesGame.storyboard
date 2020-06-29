@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uTQ-Nw-6TA">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rhymes Game View Controller-->
+        <scene sceneID="ldT-Yd-dtW">
+            <objects>
+                <viewController storyboardIdentifier="RhymesGame" hidesBottomBarWhenPushed="YES" id="uTQ-Nw-6TA" customClass="RhymesGameViewController" customModule="MegazordApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfP-Cr-od1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJb-A1-Ckb">
+                                <rect key="frame" x="5" y="69" width="365" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0hS-vv-gib"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Jogo das Rimas">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="30" name="OpenDyslexicAlta-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y9l-XW-qEG">
+                                <rect key="frame" x="0.0" y="124" width="375" height="498"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="2bB-F6-AhV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jMM-mB-Zs6" customClass="RhymesGameCollectionViewCell" customModule="MegazordApp" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Yd-Z4-LBW">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kn-SQ-VLt">
+                                <rect key="frame" x="5" y="632" width="365" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eGf-uW-FBZ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="0 pontos">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="OpenDyslexicAlta-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bj-OQ-kDd">
+                                <rect key="frame" x="330" y="20.5" width="30" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QI8-Yw-9XI"/>
+                                    <constraint firstAttribute="width" constant="30" id="dEl-CW-L53"/>
+                                </constraints>
+                                <color key="tintColor" red="0.039215686274509803" green="0.59215686274509804" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="xmark.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="exitGameButton:" destination="uTQ-Nw-6TA" eventType="touchUpInside" id="XHy-ri-4Ez"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjK-cY-D0R">
+                                <rect key="frame" x="292" y="20.5" width="30" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6by-ju-dwB"/>
+                                    <constraint firstAttribute="width" constant="30" id="hur-wc-yt7"/>
+                                </constraints>
+                                <color key="tintColor" red="0.039215686270000001" green="0.59215686270000001" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="questionmark.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="helpButton:" destination="uTQ-Nw-6TA" eventType="touchUpInside" id="q7D-dA-y1v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S9J-Ue-962" firstAttribute="bottom" secondItem="1kn-SQ-VLt" secondAttribute="bottom" constant="5" id="4dI-9m-vA1"/>
+                            <constraint firstItem="S9J-Ue-962" firstAttribute="trailing" secondItem="Y9l-XW-qEG" secondAttribute="trailing" id="62w-Ch-bde"/>
+                            <constraint firstItem="2Bj-OQ-kDd" firstAttribute="leading" secondItem="cfP-Cr-od1" secondAttribute="leading" constant="330" id="6I4-aW-2qX"/>
+                            <constraint firstItem="FjK-cY-D0R" firstAttribute="top" secondItem="cfP-Cr-od1" secondAttribute="top" constant="20" id="A5L-yh-9d7"/>
+                            <constraint firstItem="mJb-A1-Ckb" firstAttribute="top" secondItem="S9J-Ue-962" secondAttribute="top" constant="25" id="J71-NI-elN"/>
+                            <constraint firstItem="1kn-SQ-VLt" firstAttribute="leading" secondItem="S9J-Ue-962" secondAttribute="leading" constant="5" id="abR-MT-4Kk"/>
+                            <constraint firstItem="S9J-Ue-962" firstAttribute="trailing" secondItem="1kn-SQ-VLt" secondAttribute="trailing" constant="5" id="bye-Dc-LWq"/>
+                            <constraint firstItem="Y9l-XW-qEG" firstAttribute="top" secondItem="mJb-A1-Ckb" secondAttribute="bottom" constant="15" id="enh-Gp-vWc"/>
+                            <constraint firstItem="FjK-cY-D0R" firstAttribute="leading" secondItem="S9J-Ue-962" secondAttribute="leading" constant="292" id="fQk-fs-L4B"/>
+                            <constraint firstItem="mJb-A1-Ckb" firstAttribute="leading" secondItem="S9J-Ue-962" secondAttribute="leading" constant="5" id="gIN-BQ-z6O"/>
+                            <constraint firstItem="S9J-Ue-962" firstAttribute="trailing" secondItem="2Bj-OQ-kDd" secondAttribute="trailing" constant="15" id="sMU-at-jB6"/>
+                            <constraint firstItem="1kn-SQ-VLt" firstAttribute="top" secondItem="Y9l-XW-qEG" secondAttribute="bottom" constant="10" id="wUF-5W-esp"/>
+                            <constraint firstItem="S9J-Ue-962" firstAttribute="trailing" secondItem="mJb-A1-Ckb" secondAttribute="trailing" constant="5" id="wye-UW-YD6"/>
+                            <constraint firstItem="Y9l-XW-qEG" firstAttribute="leading" secondItem="S9J-Ue-962" secondAttribute="leading" id="xXZ-t5-zgS"/>
+                            <constraint firstItem="2Bj-OQ-kDd" firstAttribute="top" secondItem="cfP-Cr-od1" secondAttribute="top" constant="20" id="zYL-pf-HKf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S9J-Ue-962"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Y9l-XW-qEG" id="Ga8-LT-sbS"/>
+                        <outlet property="pointsLabel" destination="1kn-SQ-VLt" id="6TT-FD-jVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N59-4Q-rDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="174.96251874062969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

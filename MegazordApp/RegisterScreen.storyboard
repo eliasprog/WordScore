@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UjF-m6-2jo">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginScreen-->
+        <scene sceneID="cqg-f3-uf0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginScreen" id="JND-ux-rtM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SC0-ru-I7J"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9WE-QQ-k8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="629"/>
+        </scene>
+        <!--Register Screen Controller-->
+        <scene sceneID="vIj-fK-BQV">
+            <objects>
+                <viewController storyboardIdentifier="RegisterScreen" id="UjF-m6-2jo" customClass="RegisterScreenController" customModule="MegazordApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ktO-PM-gnS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pes-aw-YJ7">
+                                <rect key="frame" x="125" y="587" width="125" height="34"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="AQ1-Ia-uxf"/>
+                                    <constraint firstAttribute="height" constant="34" id="vgC-8r-m8S"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Registrar">
+                                            <attributes>
+                                                <color key="NSColor" red="0.039215686270000001" green="0.59215686270000001" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="OpenDyslexic-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doRegister:" destination="UjF-m6-2jo" eventType="touchUpInside" id="BHY-dZ-OLa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymw-hX-7nE">
+                                <rect key="frame" x="27" y="120" width="321" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Registro">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274509803915" green="0.91764705882352937" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="OpenDyslexic-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLF-x3-M23">
+                                <rect key="frame" x="27" y="173" width="321" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Nome Completo">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="OpenDyslexic-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7q-Uv-75w">
+                                <rect key="frame" x="27" y="204.5" width="321" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-as-ep3">
+                                <rect key="frame" x="27" y="423" width="321" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-xi-q5Y">
+                                <rect key="frame" x="27" y="248.5" width="321" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Usuário">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="OpenDyslexic-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R30-Sb-yzE">
+                                <rect key="frame" x="27" y="280" width="321" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-eu-4Zv">
+                                <rect key="frame" x="27" y="324" width="57" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Email">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="OpenDyslexic-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCV-V2-hnH">
+                                <rect key="frame" x="27" y="348.5" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOA-h5-vdf">
+                                <rect key="frame" x="16" y="27" width="20" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <color key="tintColor" red="0.95686274510000002" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="chevron.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="JND-ux-rtM" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="nNm-tA-Qh8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLi-GA-0kM">
+                                <rect key="frame" x="5" y="65" width="365" height="47"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WordScore">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274509803915" green="0.91764705882352937" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="40" name="OpenDyslexic-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-It-sCt">
+                                <rect key="frame" x="27" y="391.5" width="57" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Senha">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="OpenDyslexic-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.59215686270000001" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.16839033370000001" green="0.17651507259999999" blue="0.17653471230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="bottom" secondItem="pes-aw-YJ7" secondAttribute="bottom" constant="46" id="5hb-S2-zTI"/>
+                            <constraint firstItem="UvU-as-ep3" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="5tQ-aS-3oa"/>
+                            <constraint firstItem="ymw-hX-7nE" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="8DP-hY-pv6"/>
+                            <constraint firstItem="Da1-eu-4Zv" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="A4t-MV-NTg"/>
+                            <constraint firstItem="A7q-Uv-75w" firstAttribute="top" secondItem="DLF-x3-M23" secondAttribute="bottom" constant="8" id="AlE-qk-ulR"/>
+                            <constraint firstItem="lLi-GA-0kM" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="5" id="Ap1-bG-2tS"/>
+                            <constraint firstItem="DLF-x3-M23" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="BrJ-b2-4Or"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="P6x-xi-q5Y" secondAttribute="trailing" constant="27" id="FMf-Kd-VJG"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="R30-Sb-yzE" secondAttribute="trailing" constant="27" id="FQV-Vt-JbF"/>
+                            <constraint firstItem="Ep3-It-sCt" firstAttribute="top" secondItem="WCV-V2-hnH" secondAttribute="bottom" constant="9" id="GGb-B4-Mcq"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="ymw-hX-7nE" secondAttribute="trailing" constant="27" id="Izg-So-Mbq"/>
+                            <constraint firstItem="DLF-x3-M23" firstAttribute="top" secondItem="ymw-hX-7nE" secondAttribute="bottom" constant="25" id="JFh-ZR-IYY"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="DLF-x3-M23" secondAttribute="trailing" constant="27" id="JxA-yN-7NG"/>
+                            <constraint firstItem="R30-Sb-yzE" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="KM7-3d-csY"/>
+                            <constraint firstItem="P6x-xi-q5Y" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="L5k-3A-gJh"/>
+                            <constraint firstItem="A7q-Uv-75w" firstAttribute="leading" secondItem="Rd4-VS-KAk" secondAttribute="leading" constant="27" id="Nau-qp-Jjy"/>
+                            <constraint firstItem="P6x-xi-q5Y" firstAttribute="top" secondItem="A7q-Uv-75w" secondAttribute="bottom" constant="10" id="OQP-xa-jQ2"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="lLi-GA-0kM" secondAttribute="trailing" constant="5" id="Rba-q3-8GM"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="A7q-Uv-75w" secondAttribute="trailing" constant="27" id="SoA-Eu-zeF"/>
+                            <constraint firstItem="Da1-eu-4Zv" firstAttribute="top" secondItem="R30-Sb-yzE" secondAttribute="bottom" constant="10" id="TYY-aI-UmV"/>
+                            <constraint firstItem="WCV-V2-hnH" firstAttribute="leading" secondItem="Ep3-It-sCt" secondAttribute="leading" id="U68-MI-56M"/>
+                            <constraint firstItem="UvU-as-ep3" firstAttribute="top" secondItem="Ep3-It-sCt" secondAttribute="bottom" constant="8" id="Wro-Cp-Kuy"/>
+                            <constraint firstItem="WCV-V2-hnH" firstAttribute="trailing" secondItem="Ep3-It-sCt" secondAttribute="trailing" constant="257" id="X3x-LQ-NV6"/>
+                            <constraint firstAttribute="trailing" secondItem="Da1-eu-4Zv" secondAttribute="trailing" constant="291" id="aqT-I0-4VT"/>
+                            <constraint firstItem="WCV-V2-hnH" firstAttribute="leading" secondItem="UvU-as-ep3" secondAttribute="leading" id="dqd-C6-lGl"/>
+                            <constraint firstItem="lLi-GA-0kM" firstAttribute="top" secondItem="Rd4-VS-KAk" secondAttribute="top" constant="65" id="kN3-IC-Bej"/>
+                            <constraint firstItem="Rd4-VS-KAk" firstAttribute="trailing" secondItem="UvU-as-ep3" secondAttribute="trailing" constant="27" id="mXa-yD-OQZ"/>
+                            <constraint firstItem="ymw-hX-7nE" firstAttribute="top" secondItem="lLi-GA-0kM" secondAttribute="bottom" constant="8" id="qBq-wq-xHI"/>
+                            <constraint firstItem="pes-aw-YJ7" firstAttribute="centerX" secondItem="ktO-PM-gnS" secondAttribute="centerX" id="uRZ-jz-e29"/>
+                            <constraint firstItem="WCV-V2-hnH" firstAttribute="top" secondItem="Da1-eu-4Zv" secondAttribute="bottom" constant="1" id="xxv-YY-GdB"/>
+                            <constraint firstItem="R30-Sb-yzE" firstAttribute="top" secondItem="P6x-xi-q5Y" secondAttribute="bottom" constant="8" id="yiK-x7-4x9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rd4-VS-KAk"/>
+                    </view>
+                    <connections>
+                        <outlet property="completeNameTextField" destination="A7q-Uv-75w" id="YqA-6G-eVK"/>
+                        <outlet property="emailTextField" destination="WCV-V2-hnH" id="wbo-GP-wel"/>
+                        <outlet property="passwordTextField" destination="UvU-as-ep3" id="cig-p4-hwp"/>
+                        <outlet property="userTextField" destination="R30-Sb-yzE" id="8NE-QB-HHE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liy-Rz-lyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="68.815592203898049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

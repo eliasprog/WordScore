@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UkK-0r-pmh">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Objetivos-->
+        <scene sceneID="jLF-hB-nMF">
+            <objects>
+                <viewController storyboardIdentifier="RankingView" id="Ut9-Kq-Scm" customClass="RankingViewController" customModule="MegazordApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="12m-KU-Oc9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Be9-Ke-TGF">
+                                <rect key="frame" x="0.0" y="54" width="414" height="131"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130.99999999999994" id="feA-s0-waq"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="131" id="xxI-7V-R0r">
+                                    <size key="itemSize" width="131" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="22" minY="0.0" maxX="22" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-Co-7ik">
+                                <rect key="frame" x="24" y="195" width="202.33333333333334" height="39.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Classificação">
+                                        <attributes>
+                                            <font key="NSFont" size="34" name="OpenDyslexicAlta-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-l9-S9E">
+                                <rect key="frame" x="0.0" y="254.66666666666666" width="414" height="432.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="100" minY="0.0" maxX="20" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Be9-Ke-TGF" firstAttribute="top" secondItem="CDV-gv-4ww" secondAttribute="top" constant="10" id="CQl-og-PAf"/>
+                            <constraint firstItem="w0P-l9-S9E" firstAttribute="top" secondItem="e0a-Co-7ik" secondAttribute="bottom" constant="20" id="J5m-fn-Zq5"/>
+                            <constraint firstItem="e0a-Co-7ik" firstAttribute="top" secondItem="Be9-Ke-TGF" secondAttribute="bottom" constant="10" id="Nyp-9n-bU4"/>
+                            <constraint firstItem="e0a-Co-7ik" firstAttribute="leading" secondItem="CDV-gv-4ww" secondAttribute="leading" constant="24" id="OH6-BX-u7k"/>
+                            <constraint firstItem="CDV-gv-4ww" firstAttribute="bottom" secondItem="w0P-l9-S9E" secondAttribute="bottom" id="P0h-qn-8GM"/>
+                            <constraint firstItem="Be9-Ke-TGF" firstAttribute="leading" secondItem="CDV-gv-4ww" secondAttribute="leading" id="Rgd-kc-pdQ"/>
+                            <constraint firstItem="w0P-l9-S9E" firstAttribute="leading" secondItem="CDV-gv-4ww" secondAttribute="leading" id="T9G-Lh-3gQ"/>
+                            <constraint firstItem="CDV-gv-4ww" firstAttribute="trailing" secondItem="Be9-Ke-TGF" secondAttribute="trailing" id="Wz4-by-UIM"/>
+                            <constraint firstItem="CDV-gv-4ww" firstAttribute="trailing" secondItem="w0P-l9-S9E" secondAttribute="trailing" id="jkg-Vv-l3M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CDV-gv-4ww"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Objetivos" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="Xfp-nl-Fer">
+                        <barButtonItem key="backBarButtonItem" title="Objetivos" id="tXp-fi-d0s"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="zbp-DA-bnE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rGH-Zc-eYv">
+                                <rect key="frame" x="372" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.59215686274509804" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="addObjectiveTapped:" destination="Ut9-Kq-Scm" eventType="touchUpInside" id="asz-8C-pMs"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="rGH-Zc-eYv" id="lUd-fJ-QiP"/>
+                        <outlet property="collectionView" destination="Be9-Ke-TGF" id="iyE-Pj-LRY"/>
+                        <outlet property="tableView" destination="w0P-l9-S9E" id="OJl-iT-geP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UA-qb-1yp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198.5507246376812" y="97.826086956521749"/>
+        </scene>
+        <!--Ranking-->
+        <scene sceneID="D5E-4S-BBl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="UkK-0r-pmh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ranking" image="ranking" id="6qW-8l-oyD"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fv2-7o-aBt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ut9-Kq-Scm" kind="relationship" relationship="rootViewController" id="D9K-du-Wzt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lga-FS-PU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.826086956521749"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="ranking" width="30" height="28"/>
+    </resources>
+</document>

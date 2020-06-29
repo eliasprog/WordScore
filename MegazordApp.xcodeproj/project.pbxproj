@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C533232248FD41500F0C07A /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C533231248FD41500F0C07A /* LoginScreen.storyboard */; };
+		7C533234248FD71800F0C07A /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C533233248FD71800F0C07A /* LoginScreenController.swift */; };
+		7C8DBC8524911EF500D77CBA /* RegisterScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8DBC8424911EF500D77CBA /* RegisterScreen.storyboard */; };
+		7C8DBC8724911F1B00D77CBA /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8DBC8624911F1B00D77CBA /* RegisterScreenController.swift */; };
+		7CDF20ED249A422A00138083 /* ConfigView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF7BAF72497AA4F00323173 /* ConfigView.storyboard */; };
+		8522381D248FCDF400F6B043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8522381C248FCDF400F6B043 /* AppDelegate.swift */; };
+		8522381F248FCDF400F6B043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8522381E248FCDF400F6B043 /* SceneDelegate.swift */; };
+		85223827248FCDF400F6B043 /* MegazordApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85223825248FCDF400F6B043 /* MegazordApp.xcdatamodeld */; };
+		85223829248FCDF900F6B043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85223828248FCDF900F6B043 /* Assets.xcassets */; };
+		8522382C248FCDF900F6B043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8522382A248FCDF900F6B043 /* LaunchScreen.storyboard */; };
+		85223837248FCDF900F6B043 /* MegazordAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85223836248FCDF900F6B043 /* MegazordAppTests.swift */; };
+		85223842248FCDF900F6B043 /* MegazordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85223841248FCDF900F6B043 /* MegazordAppUITests.swift */; };
+		D809764124A22C7A001C0842 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = D809764024A22C7A001C0842 /* AlamofireImage */; };
+		D809764324A249E5001C0842 /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D809764224A249E5001C0842 /* PopUpWindow.swift */; };
+		D8117F1324A4CE6E007D9601 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		D8117F1724A4CE77007D9601 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		D8117F1B24A4D4EE007D9601 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8117F1A24A4D4EE007D9601 /* User.swift */; };
+		D8117F1D24A4D52F007D9601 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8117F1C24A4D52F007D9601 /* Response.swift */; };
+		D8117F4824A4F257007D9601 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8117F4624A4F257007D9601 /* AvatarCollectionViewCell.swift */; };
+		D8117F4924A4F257007D9601 /* AvatarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8117F4724A4F257007D9601 /* AvatarCollectionViewCell.xib */; };
+		D837869424951905005DD26D /* CardsGamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837869324951905005DD26D /* CardsGamesCollectionViewCell.swift */; };
+		D837869624951974005DD26D /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837869524951974005DD26D /* GamesViewController.swift */; };
+		D83786A024952133005DD26D /* RhymesGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D837869F24952133005DD26D /* RhymesGame.storyboard */; };
+		D83786A3249523BD005DD26D /* RhymesGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83786A1249523BD005DD26D /* RhymesGameCollectionViewCell.swift */; };
+		D83786A4249523BD005DD26D /* RhymesGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83786A2249523BD005DD26D /* RhymesGameCollectionViewCell.xib */; };
+		D83786A624952587005DD26D /* RhymesGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83786A524952587005DD26D /* RhymesGameViewController.swift */; };
+		D83786A924952F97005DD26D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83786A824952F97005DD26D /* AVFoundation.framework */; };
+		D83786BA24991DF5005DD26D /* ConfigView.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = DEF7BAF72497AA4F00323173 /* ConfigView.storyboard */; };
+		DE2ED0EB249109BA00758D06 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2ED0EA249109BA00758D06 /* TabBar.storyboard */; };
+		DE2ED0ED24910B5D00758D06 /* RankingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2ED0EC24910B5D00758D06 /* RankingView.storyboard */; };
+		DE2ED0EF24911B6700758D06 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2ED0EE24911B6700758D06 /* RankingViewController.swift */; };
+		DE2ED11E2491742E00758D06 /* ObjetivoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2ED11C2491742E00758D06 /* ObjetivoCollectionViewCell.swift */; };
+		DE2ED11F2491742E00758D06 /* ObjetivoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2ED11D2491742E00758D06 /* ObjetivoCollectionViewCell.xib */; };
+		DE6C4B5B24A4D5AB00783847 /* CardRhymes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C4B5A24A4D5AB00783847 /* CardRhymes.swift */; };
+		DE6C4B6F24A4D68000783847 /* GamesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6C4B6E24A4D68000783847 /* GamesView.storyboard */; };
+		DE88AF5724A284B800543B0B /* AddObjectiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE88AF5624A284B800543B0B /* AddObjectiveView.storyboard */; };
+		DE88AF5924A2854700543B0B /* AddObjectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88AF5824A2854700543B0B /* AddObjectiveViewController.swift */; };
+		DE9CBAED24A0DC9B002A6A3E /* RankingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CBAEC24A0DC9B002A6A3E /* RankingItem.swift */; };
+		DE9CBAEF24A0DCA7002A6A3E /* RankingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CBAEE24A0DCA7002A6A3E /* RankingRepository.swift */; };
+		DEBC11D62491BAAA0006778B /* ClassificacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC11D42491BAAA0006778B /* ClassificacaoTableViewCell.swift */; };
+		DEBC11D72491BAAA0006778B /* ClassificacaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBC11D52491BAAA0006778B /* ClassificacaoTableViewCell.xib */; };
+		DED5BB3924A6EA1200BEE304 /* OpenDyslexicMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB2F24A6EA1200BEE304 /* OpenDyslexicMono-Regular.otf */; };
+		DED5BB3A24A6EA1200BEE304 /* OpenDyslexicAlta-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3024A6EA1200BEE304 /* OpenDyslexicAlta-BoldItalic.otf */; };
+		DED5BB3B24A6EA1200BEE304 /* OpenDyslexic-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3124A6EA1200BEE304 /* OpenDyslexic-Italic.otf */; };
+		DED5BB3C24A6EA1200BEE304 /* OpenDyslexic-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3224A6EA1200BEE304 /* OpenDyslexic-BoldItalic.otf */; };
+		DED5BB3D24A6EA1200BEE304 /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3324A6EA1200BEE304 /* OpenDyslexicAlta-Regular.otf */; };
+		DED5BB3E24A6EA1200BEE304 /* OpenDyslexic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3424A6EA1200BEE304 /* OpenDyslexic-Bold.otf */; };
+		DED5BB3F24A6EA1200BEE304 /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3524A6EA1200BEE304 /* OpenDyslexicAlta-Bold.otf */; };
+		DED5BB4124A6EA1200BEE304 /* OpenDyslexicAlta-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3724A6EA1200BEE304 /* OpenDyslexicAlta-Italic.otf */; };
+		DED5BB4224A6EA1200BEE304 /* OpenDyslexic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED5BB3824A6EA1200BEE304 /* OpenDyslexic-Regular.otf */; };
+		DEE0393024A1433F006599EB /* LoginScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 7C533231248FD41500F0C07A /* LoginScreen.storyboard */; };
+		DEE0393224A19DDE006599EB /* ObjectiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0393124A19DDE006599EB /* ObjectiveItem.swift */; };
+		DEE0393424A19FEF006599EB /* ObjectiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0393324A19FEF006599EB /* ObjectiveRepository.swift */; };
+		DEF7BAFA2497B81800323173 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7BAF92497B81800323173 /* ConfigViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85223833248FCDF900F6B043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85223811248FCDF400F6B043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85223818248FCDF400F6B043;
+			remoteInfo = MegazordApp;
+		};
+		8522383E248FCDF900F6B043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85223811248FCDF400F6B043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85223818248FCDF400F6B043;
+			remoteInfo = MegazordApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C533231248FD41500F0C07A /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		7C533233248FD71800F0C07A /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
+		7C65A44124925B7C00C58840 /* OpenDyslexicMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicMono-Regular.otf"; sourceTree = "<group>"; };
+		7C65A44224925B7C00C58840 /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
+		7C65A44324925B7C00C58840 /* OpenDyslexic-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-Italic.otf"; sourceTree = "<group>"; };
+		7C65A44424925B7C00C58840 /* OpenDyslexic-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-BoldItalic.otf"; sourceTree = "<group>"; };
+		7C65A44524925B7C00C58840 /* OpenDyslexicAlta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Regular.otf"; sourceTree = "<group>"; };
+		7C65A44624925B7C00C58840 /* OpenDyslexic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-Bold.otf"; sourceTree = "<group>"; };
+		7C65A44724925B7C00C58840 /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
+		7C65A44924925B7C00C58840 /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
+		7C65A44A24925B7C00C58840 /* OpenDyslexic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-Regular.otf"; sourceTree = "<group>"; };
+		7C8DBC8424911EF500D77CBA /* RegisterScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen.storyboard; sourceTree = "<group>"; };
+		7C8DBC8624911F1B00D77CBA /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
+		85223819248FCDF400F6B043 /* MegazordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegazordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8522381C248FCDF400F6B043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8522381E248FCDF400F6B043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85223826248FCDF400F6B043 /* MegazordApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MegazordApp.xcdatamodel; sourceTree = "<group>"; };
+		85223828248FCDF900F6B043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8522382B248FCDF900F6B043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8522382D248FCDF900F6B043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85223832248FCDF900F6B043 /* MegazordAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegazordAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85223836248FCDF900F6B043 /* MegazordAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegazordAppTests.swift; sourceTree = "<group>"; };
+		85223838248FCDF900F6B043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8522383D248FCDF900F6B043 /* MegazordAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegazordAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85223841248FCDF900F6B043 /* MegazordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegazordAppUITests.swift; sourceTree = "<group>"; };
+		85223843248FCDF900F6B043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D809764224A249E5001C0842 /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
+		D8117F1A24A4D4EE007D9601 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8117F1C24A4D52F007D9601 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		D8117F4624A4F257007D9601 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8117F4724A4F257007D9601 /* AvatarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8378691249511E5005DD26D /* GamesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = GamesView.storyboard; path = /Desktop/GamesView.storyboard; sourceTree = "<absolute>"; };
+		D837869324951905005DD26D /* CardsGamesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGamesCollectionViewCell.swift; sourceTree = "<group>"; };
+		D837869524951974005DD26D /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		D837869F24952133005DD26D /* RhymesGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RhymesGame.storyboard; sourceTree = "<group>"; };
+		D83786A1249523BD005DD26D /* RhymesGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymesGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		D83786A2249523BD005DD26D /* RhymesGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RhymesGameCollectionViewCell.xib; sourceTree = "<group>"; };
+		D83786A524952587005DD26D /* RhymesGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymesGameViewController.swift; sourceTree = "<group>"; };
+		D83786A824952F97005DD26D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D83786B024991D16005DD26D /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-BoldItalic.otf"; path = "../../../../Downloads/open_dyslexic/OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
+		D83786B224991D21005DD26D /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-Bold.otf"; path = "../../../../Downloads/open_dyslexic/OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
+		D83786B424991D3F005DD26D /* OpenDyslexic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Regular.otf"; path = "../../../../Downloads/open_dyslexic/OpenDyslexic-Regular.otf"; sourceTree = "<group>"; };
+		D83786B624991D4C005DD26D /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-Italic.otf"; path = "../../../../Downloads/open_dyslexic/OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
+		D83786B824991D58005DD26D /* OpenDyslexic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Bold.otf"; path = "../../../../Downloads/open_dyslexic/OpenDyslexic-Bold.otf"; sourceTree = "<group>"; };
+		DE2ED0EA249109BA00758D06 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		DE2ED0EC24910B5D00758D06 /* RankingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RankingView.storyboard; sourceTree = "<group>"; };
+		DE2ED0EE24911B6700758D06 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		DE2ED11C2491742E00758D06 /* ObjetivoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjetivoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE2ED11D2491742E00758D06 /* ObjetivoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjetivoCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE6C4B5A24A4D5AB00783847 /* CardRhymes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardRhymes.swift; path = MegazordApp/Rhymes/Model/CardRhymes.swift; sourceTree = SOURCE_ROOT; };
+		DE6C4B6E24A4D68000783847 /* GamesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GamesView.storyboard; sourceTree = "<group>"; };
+		DE88AF5624A284B800543B0B /* AddObjectiveView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddObjectiveView.storyboard; sourceTree = "<group>"; };
+		DE88AF5824A2854700543B0B /* AddObjectiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddObjectiveViewController.swift; sourceTree = "<group>"; };
+		DE9CBAEC24A0DC9B002A6A3E /* RankingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingItem.swift; sourceTree = "<group>"; };
+		DE9CBAEE24A0DCA7002A6A3E /* RankingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRepository.swift; sourceTree = "<group>"; };
+		DEBC11D42491BAAA0006778B /* ClassificacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificacaoTableViewCell.swift; sourceTree = "<group>"; };
+		DEBC11D52491BAAA0006778B /* ClassificacaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassificacaoTableViewCell.xib; sourceTree = "<group>"; };
+		DEBC11E224925E170006778B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		DED5BB2F24A6EA1200BEE304 /* OpenDyslexicMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicMono-Regular.otf"; sourceTree = "<group>"; };
+		DED5BB3024A6EA1200BEE304 /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
+		DED5BB3124A6EA1200BEE304 /* OpenDyslexic-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-Italic.otf"; sourceTree = "<group>"; };
+		DED5BB3224A6EA1200BEE304 /* OpenDyslexic-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-BoldItalic.otf"; sourceTree = "<group>"; };
+		DED5BB3324A6EA1200BEE304 /* OpenDyslexicAlta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Regular.otf"; sourceTree = "<group>"; };
+		DED5BB3424A6EA1200BEE304 /* OpenDyslexic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-Bold.otf"; sourceTree = "<group>"; };
+		DED5BB3524A6EA1200BEE304 /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
+		DED5BB3724A6EA1200BEE304 /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
+		DED5BB3824A6EA1200BEE304 /* OpenDyslexic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexic-Regular.otf"; sourceTree = "<group>"; };
+		DEE0393124A19DDE006599EB /* ObjectiveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveItem.swift; sourceTree = "<group>"; };
+		DEE0393324A19FEF006599EB /* ObjectiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveRepository.swift; sourceTree = "<group>"; };
+		DEF7BAF72497AA4F00323173 /* ConfigView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigView.storyboard; sourceTree = "<group>"; };
+		DEF7BAF92497B81800323173 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85223816248FCDF400F6B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83786A924952F97005DD26D /* AVFoundation.framework in Frameworks */,
+				D809764124A22C7A001C0842 /* AlamofireImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8522382F248FCDF900F6B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8522383A248FCDF900F6B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85223810248FCDF400F6B043 = {
+			isa = PBXGroup;
+			children = (
+				8522381B248FCDF400F6B043 /* MegazordApp */,
+				85223835248FCDF900F6B043 /* MegazordAppTests */,
+				85223840248FCDF900F6B043 /* MegazordAppUITests */,
+				8522381A248FCDF400F6B043 /* Products */,
+				D83786A724952F97005DD26D /* Frameworks */,
+				D83786AE2499164E005DD26D /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		8522381A248FCDF400F6B043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85223819248FCDF400F6B043 /* MegazordApp.app */,
+				85223832248FCDF900F6B043 /* MegazordAppTests.xctest */,
+				8522383D248FCDF900F6B043 /* MegazordAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8522381B248FCDF400F6B043 /* MegazordApp */ = {
+			isa = PBXGroup;
+			children = (
+				DED5BB2E24A6EA1200BEE304 /* fonts */,
+				DE9CBAF024A0E1ED002A6A3E /* Repositories */,
+				DE9CBAEB24A0DC7A002A6A3E /* Model */,
+				DEF7BAF02497A4FE00323173 /* ConfigScreen */,
+				DEBC11EF24926AA40006778B /* RankingScreen */,
+				85223828248FCDF900F6B043 /* Assets.xcassets */,
+				D837869C249520C4005DD26D /* Rhymes */,
+				D837868E2495119B005DD26D /* GamesScreen */,
+				8522381C248FCDF400F6B043 /* AppDelegate.swift */,
+				8522381E248FCDF400F6B043 /* SceneDelegate.swift */,
+				8522382A248FCDF900F6B043 /* LaunchScreen.storyboard */,
+				DE2ED0EA249109BA00758D06 /* TabBar.storyboard */,
+				8522382D248FCDF900F6B043 /* Info.plist */,
+				85223825248FCDF400F6B043 /* MegazordApp.xcdatamodeld */,
+				7C533231248FD41500F0C07A /* LoginScreen.storyboard */,
+				7C533233248FD71800F0C07A /* LoginScreenController.swift */,
+				7C8DBC8424911EF500D77CBA /* RegisterScreen.storyboard */,
+				7C8DBC8624911F1B00D77CBA /* RegisterScreenController.swift */,
+				D8117F1A24A4D4EE007D9601 /* User.swift */,
+				D8117F1C24A4D52F007D9601 /* Response.swift */,
+			);
+			path = MegazordApp;
+			sourceTree = "<group>";
+		};
+		85223835248FCDF900F6B043 /* MegazordAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				85223836248FCDF900F6B043 /* MegazordAppTests.swift */,
+				85223838248FCDF900F6B043 /* Info.plist */,
+			);
+			path = MegazordAppTests;
+			sourceTree = "<group>";
+		};
+		85223840248FCDF900F6B043 /* MegazordAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85223841248FCDF900F6B043 /* MegazordAppUITests.swift */,
+				85223843248FCDF900F6B043 /* Info.plist */,
+			);
+			path = MegazordAppUITests;
+			sourceTree = "<group>";
+		};
+		D837868E2495119B005DD26D /* GamesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D8378690249511BF005DD26D /* Controller */,
+				D837868F249511B9005DD26D /* View */,
+			);
+			path = GamesScreen;
+			sourceTree = "<group>";
+		};
+		D837868F249511B9005DD26D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE6C4B6E24A4D68000783847 /* GamesView.storyboard */,
+				D837869324951905005DD26D /* CardsGamesCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8378690249511BF005DD26D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D837869524951974005DD26D /* GamesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D837869C249520C4005DD26D /* Rhymes */ = {
+			isa = PBXGroup;
+			children = (
+				D837869E249520D8005DD26D /* Controller */,
+				D837869D249520CE005DD26D /* View */,
+			);
+			path = Rhymes;
+			sourceTree = "<group>";
+		};
+		D837869D249520CE005DD26D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D837869F24952133005DD26D /* RhymesGame.storyboard */,
+				D83786A1249523BD005DD26D /* RhymesGameCollectionViewCell.swift */,
+				D83786A2249523BD005DD26D /* RhymesGameCollectionViewCell.xib */,
+				D809764224A249E5001C0842 /* PopUpWindow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D837869E249520D8005DD26D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D83786A524952587005DD26D /* RhymesGameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D83786A724952F97005DD26D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D83786A824952F97005DD26D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D83786AE2499164E005DD26D /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				DEBC11E224925E170006778B /* README.txt */,
+				7C65A44224925B7C00C58840 /* OpenDyslexicAlta-BoldItalic.otf */,
+				7C65A44724925B7C00C58840 /* OpenDyslexicAlta-Bold.otf */,
+				7C65A44A24925B7C00C58840 /* OpenDyslexic-Regular.otf */,
+				7C65A44124925B7C00C58840 /* OpenDyslexicMono-Regular.otf */,
+				7C65A44924925B7C00C58840 /* OpenDyslexicAlta-Italic.otf */,
+				7C65A44624925B7C00C58840 /* OpenDyslexic-Bold.otf */,
+				7C65A44524925B7C00C58840 /* OpenDyslexicAlta-Regular.otf */,
+				7C65A44324925B7C00C58840 /* OpenDyslexic-Italic.otf */,
+				7C65A44424925B7C00C58840 /* OpenDyslexic-BoldItalic.otf */,
+				D8378691249511E5005DD26D /* GamesView.storyboard */,
+				D83786B424991D3F005DD26D /* OpenDyslexic-Regular.otf */,
+				D83786B824991D58005DD26D /* OpenDyslexic-Bold.otf */,
+				D83786B224991D21005DD26D /* OpenDyslexicAlta-Bold.otf */,
+				D83786B624991D4C005DD26D /* OpenDyslexicAlta-Italic.otf */,
+				D83786B024991D16005DD26D /* OpenDyslexicAlta-BoldItalic.otf */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DE9CBAEB24A0DC7A002A6A3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CBAEC24A0DC9B002A6A3E /* RankingItem.swift */,
+				DEE0393124A19DDE006599EB /* ObjectiveItem.swift */,
+				DE6C4B5A24A4D5AB00783847 /* CardRhymes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CBAF024A0E1ED002A6A3E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CBAEE24A0DCA7002A6A3E /* RankingRepository.swift */,
+				DEE0393324A19FEF006599EB /* ObjectiveRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DEBC11EF24926AA40006778B /* RankingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DEBC11F124926ABB0006778B /* Controller */,
+				DEBC11F024926AB20006778B /* View */,
+			);
+			path = RankingScreen;
+			sourceTree = "<group>";
+		};
+		DEBC11F024926AB20006778B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2ED0EC24910B5D00758D06 /* RankingView.storyboard */,
+				DE2ED11D2491742E00758D06 /* ObjetivoCollectionViewCell.xib */,
+				DEBC11D52491BAAA0006778B /* ClassificacaoTableViewCell.xib */,
+				DE88AF5624A284B800543B0B /* AddObjectiveView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEBC11F124926ABB0006778B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2ED0EE24911B6700758D06 /* RankingViewController.swift */,
+				DE2ED11C2491742E00758D06 /* ObjetivoCollectionViewCell.swift */,
+				DEBC11D42491BAAA0006778B /* ClassificacaoTableViewCell.swift */,
+				DE88AF5824A2854700543B0B /* AddObjectiveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DED5BB2E24A6EA1200BEE304 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DED5BB2F24A6EA1200BEE304 /* OpenDyslexicMono-Regular.otf */,
+				DED5BB3024A6EA1200BEE304 /* OpenDyslexicAlta-BoldItalic.otf */,
+				DED5BB3124A6EA1200BEE304 /* OpenDyslexic-Italic.otf */,
+				DED5BB3224A6EA1200BEE304 /* OpenDyslexic-BoldItalic.otf */,
+				DED5BB3324A6EA1200BEE304 /* OpenDyslexicAlta-Regular.otf */,
+				DED5BB3424A6EA1200BEE304 /* OpenDyslexic-Bold.otf */,
+				DED5BB3524A6EA1200BEE304 /* OpenDyslexicAlta-Bold.otf */,
+				DED5BB3724A6EA1200BEE304 /* OpenDyslexicAlta-Italic.otf */,
+				DED5BB3824A6EA1200BEE304 /* OpenDyslexic-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		DEF7BAF02497A4FE00323173 /* ConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7BAF22497A52100323173 /* View */,
+				DEF7BAF12497A51900323173 /* Controller */,
+			);
+			path = ConfigScreen;
+			sourceTree = "<group>";
+		};
+		DEF7BAF12497A51900323173 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7BAF92497B81800323173 /* ConfigViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEF7BAF22497A52100323173 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEF7BAF72497AA4F00323173 /* ConfigView.storyboard */,
+				D8117F4624A4F257007D9601 /* AvatarCollectionViewCell.swift */,
+				D8117F4724A4F257007D9601 /* AvatarCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85223818248FCDF400F6B043 /* MegazordApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85223846248FCDF900F6B043 /* Build configuration list for PBXNativeTarget "MegazordApp" */;
+			buildPhases = (
+				85223815248FCDF400F6B043 /* Sources */,
+				85223816248FCDF400F6B043 /* Frameworks */,
+				85223817248FCDF400F6B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegazordApp;
+			packageProductDependencies = (
+				D809764024A22C7A001C0842 /* AlamofireImage */,
+			);
+			productName = MegazordApp;
+			productReference = 85223819248FCDF400F6B043 /* MegazordApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85223831248FCDF900F6B043 /* MegazordAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85223849248FCDF900F6B043 /* Build configuration list for PBXNativeTarget "MegazordAppTests" */;
+			buildPhases = (
+				8522382E248FCDF900F6B043 /* Sources */,
+				8522382F248FCDF900F6B043 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85223834248FCDF900F6B043 /* PBXTargetDependency */,
+			);
+			name = MegazordAppTests;
+			productName = MegazordAppTests;
+			productReference = 85223832248FCDF900F6B043 /* MegazordAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8522383C248FCDF900F6B043 /* MegazordAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8522384C248FCDF900F6B043 /* Build configuration list for PBXNativeTarget "MegazordAppUITests" */;
+			buildPhases = (
+				85223839248FCDF900F6B043 /* Sources */,
+				8522383A248FCDF900F6B043 /* Frameworks */,
+				8522383B248FCDF900F6B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8522383F248FCDF900F6B043 /* PBXTargetDependency */,
+			);
+			name = MegazordAppUITests;
+			productName = MegazordAppUITests;
+			productReference = 8522383D248FCDF900F6B043 /* MegazordAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85223811248FCDF400F6B043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = MegazordTeam;
+				TargetAttributes = {
+					85223818248FCDF400F6B043 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					85223831248FCDF900F6B043 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 85223818248FCDF400F6B043;
+					};
+					8522383C248FCDF900F6B043 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 85223818248FCDF400F6B043;
+					};
+				};
+			};
+			buildConfigurationList = 85223814248FCDF400F6B043 /* Build configuration list for PBXProject "MegazordApp" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85223810248FCDF400F6B043;
+			packageReferences = (
+				D809763F24A22C7A001C0842 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = 8522381A248FCDF400F6B043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85223818248FCDF400F6B043 /* MegazordApp */,
+				85223831248FCDF900F6B043 /* MegazordAppTests */,
+				8522383C248FCDF900F6B043 /* MegazordAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85223817248FCDF400F6B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDF20ED249A422A00138083 /* ConfigView.storyboard in Resources */,
+				DED5BB4124A6EA1200BEE304 /* OpenDyslexicAlta-Italic.otf in Resources */,
+				D8117F1724A4CE77007D9601 /* (null) in Resources */,
+				DE2ED0EB249109BA00758D06 /* TabBar.storyboard in Resources */,
+				D83786A024952133005DD26D /* RhymesGame.storyboard in Resources */,
+				DED5BB3F24A6EA1200BEE304 /* OpenDyslexicAlta-Bold.otf in Resources */,
+				DE6C4B6F24A4D68000783847 /* GamesView.storyboard in Resources */,
+				DED5BB3A24A6EA1200BEE304 /* OpenDyslexicAlta-BoldItalic.otf in Resources */,
+				D8117F4924A4F257007D9601 /* AvatarCollectionViewCell.xib in Resources */,
+				DE88AF5724A284B800543B0B /* AddObjectiveView.storyboard in Resources */,
+				D83786A4249523BD005DD26D /* RhymesGameCollectionViewCell.xib in Resources */,
+				8522382C248FCDF900F6B043 /* LaunchScreen.storyboard in Resources */,
+				85223829248FCDF900F6B043 /* Assets.xcassets in Resources */,
+				DE2ED0ED24910B5D00758D06 /* RankingView.storyboard in Resources */,
+				DE2ED11F2491742E00758D06 /* ObjetivoCollectionViewCell.xib in Resources */,
+				DED5BB4224A6EA1200BEE304 /* OpenDyslexic-Regular.otf in Resources */,
+				DEBC11D72491BAAA0006778B /* ClassificacaoTableViewCell.xib in Resources */,
+				DED5BB3D24A6EA1200BEE304 /* OpenDyslexicAlta-Regular.otf in Resources */,
+				DED5BB3924A6EA1200BEE304 /* OpenDyslexicMono-Regular.otf in Resources */,
+				7C533232248FD41500F0C07A /* LoginScreen.storyboard in Resources */,
+				DED5BB3E24A6EA1200BEE304 /* OpenDyslexic-Bold.otf in Resources */,
+				7C8DBC8524911EF500D77CBA /* RegisterScreen.storyboard in Resources */,
+				DED5BB3C24A6EA1200BEE304 /* OpenDyslexic-BoldItalic.otf in Resources */,
+				DED5BB3B24A6EA1200BEE304 /* OpenDyslexic-Italic.otf in Resources */,
+				D8117F1324A4CE6E007D9601 /* (null) in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8522383B248FCDF900F6B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85223815248FCDF400F6B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE0393024A1433F006599EB /* LoginScreen.storyboard in Sources */,
+				D83786BA24991DF5005DD26D /* ConfigView.storyboard in Sources */,
+				DEE0393424A19FEF006599EB /* ObjectiveRepository.swift in Sources */,
+				D8117F4824A4F257007D9601 /* AvatarCollectionViewCell.swift in Sources */,
+				D837869624951974005DD26D /* GamesViewController.swift in Sources */,
+				D83786A3249523BD005DD26D /* RhymesGameCollectionViewCell.swift in Sources */,
+				DE2ED11E2491742E00758D06 /* ObjetivoCollectionViewCell.swift in Sources */,
+				D8117F1D24A4D52F007D9601 /* Response.swift in Sources */,
+				8522381D248FCDF400F6B043 /* AppDelegate.swift in Sources */,
+				7C8DBC8724911F1B00D77CBA /* RegisterScreenController.swift in Sources */,
+				85223827248FCDF400F6B043 /* MegazordApp.xcdatamodeld in Sources */,
+				7C533234248FD71800F0C07A /* LoginScreenController.swift in Sources */,
+				DE9CBAEF24A0DCA7002A6A3E /* RankingRepository.swift in Sources */,
+				DEE0393224A19DDE006599EB /* ObjectiveItem.swift in Sources */,
+				DE88AF5924A2854700543B0B /* AddObjectiveViewController.swift in Sources */,
+				DE9CBAED24A0DC9B002A6A3E /* RankingItem.swift in Sources */,
+				8522381F248FCDF400F6B043 /* SceneDelegate.swift in Sources */,
+				DE6C4B5B24A4D5AB00783847 /* CardRhymes.swift in Sources */,
+				DEF7BAFA2497B81800323173 /* ConfigViewController.swift in Sources */,
+				DEBC11D62491BAAA0006778B /* ClassificacaoTableViewCell.swift in Sources */,
+				D809764324A249E5001C0842 /* PopUpWindow.swift in Sources */,
+				DE2ED0EF24911B6700758D06 /* RankingViewController.swift in Sources */,
+				D8117F1B24A4D4EE007D9601 /* User.swift in Sources */,
+				D83786A624952587005DD26D /* RhymesGameViewController.swift in Sources */,
+				D837869424951905005DD26D /* CardsGamesCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8522382E248FCDF900F6B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85223837248FCDF900F6B043 /* MegazordAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85223839248FCDF900F6B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85223842248FCDF900F6B043 /* MegazordAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85223834248FCDF900F6B043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85223818248FCDF400F6B043 /* MegazordApp */;
+			targetProxy = 85223833248FCDF900F6B043 /* PBXContainerItemProxy */;
+		};
+		8522383F248FCDF900F6B043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85223818248FCDF400F6B043 /* MegazordApp */;
+			targetProxy = 8522383E248FCDF900F6B043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8522382A248FCDF900F6B043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8522382B248FCDF900F6B043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85223844248FCDF900F6B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85223845248FCDF900F6B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85223847248FCDF900F6B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VV557L4WY2;
+				INFOPLIST_FILE = MegazordApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MegazordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85223848248FCDF900F6B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VV557L4WY2;
+				INFOPLIST_FILE = MegazordApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MegazordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8522384A248FCDF900F6B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795A25396T;
+				INFOPLIST_FILE = MegazordAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MegazordAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegazordApp.app/MegazordApp";
+			};
+			name = Debug;
+		};
+		8522384B248FCDF900F6B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795A25396T;
+				INFOPLIST_FILE = MegazordAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MegazordAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegazordApp.app/MegazordApp";
+			};
+			name = Release;
+		};
+		8522384D248FCDF900F6B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795A25396T;
+				INFOPLIST_FILE = MegazordAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MegazordAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MegazordApp;
+			};
+			name = Debug;
+		};
+		8522384E248FCDF900F6B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795A25396T;
+				INFOPLIST_FILE = MegazordAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MegazordAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MegazordApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85223814248FCDF400F6B043 /* Build configuration list for PBXProject "MegazordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85223844248FCDF900F6B043 /* Debug */,
+				85223845248FCDF900F6B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85223846248FCDF900F6B043 /* Build configuration list for PBXNativeTarget "MegazordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85223847248FCDF900F6B043 /* Debug */,
+				85223848248FCDF900F6B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85223849248FCDF900F6B043 /* Build configuration list for PBXNativeTarget "MegazordAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8522384A248FCDF900F6B043 /* Debug */,
+				8522384B248FCDF900F6B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8522384C248FCDF900F6B043 /* Build configuration list for PBXNativeTarget "MegazordAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8522384D248FCDF900F6B043 /* Debug */,
+				8522384E248FCDF900F6B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D809763F24A22C7A001C0842 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D809764024A22C7A001C0842 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D809763F24A22C7A001C0842 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		85223825248FCDF400F6B043 /* MegazordApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85223826248FCDF400F6B043 /* MegazordApp.xcdatamodel */,
+			);
+			currentVersion = 85223826248FCDF400F6B043 /* MegazordApp.xcdatamodel */;
+			path = MegazordApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85223811248FCDF400F6B043 /* Project object */;
+}
